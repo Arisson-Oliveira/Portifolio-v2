@@ -26,5 +26,5 @@ Este portfólio foi criado para mostrar minhas habilidades e projetos. Ele cont�
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Arisson-Oliveira/portifoliov2.git
+   git clone https://github.com/Arisson-Oliveira/Portifolio-v2.git
 

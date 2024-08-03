@@ -261,7 +261,7 @@ footer > div{
     box-shadow: 1px 1px 1px var(--cyan1);
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 800px){
     nav, .box-btn-actions{
         display: none;
     }
@@ -302,7 +302,7 @@ footer > div{
 
     .img-who-am-i{
         max-width: 400px;
-        height: 100%;
+        height: 95%;
     }
 
     h2{

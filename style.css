@@ -261,60 +261,72 @@ footer > div{
     box-shadow: 1px 1px 1px var(--cyan1);
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
 
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Remove a rolagem horizontal */
+    }
 
-
-    nav, .box-btn-actions{
+    nav, .box-btn-actions {
         display: none;
     }
-    .img-profile{
-        max-width: 90%;
+
+    .img-profile {
+        max-width: 100%;
         height: auto;
     }
 
-    .first-section{
+    .first-section {
+        display: flex;
         flex-direction: column-reverse;
+        align-items: center;
     }
 
-    .first-section h1{
+    .first-section h1 {
         font-size: 30px;
         text-align: center;
+        margin: 0; /* Remove margens que podem causar problemas de largura */
     }
 
-    .first-section p{
+    .first-section p {
+        text-align: center;
+        margin: 0; /* Remove margens que podem causar problemas de largura */
+    }
+
+    .btn-action, .link-action {
+        padding: .6rem;
+        margin-left: 0; /* Ajusta a margem para evitar rolagem horizontal */
+        display: block; /* Faz com que os botões se alinhem verticalmente */
         text-align: center;
     }
 
-    .btn-action, .link-action{
-        padding: .6rem;
-        margin-left: 23%;
-        
-    }
-
-    .img-logo{
-        padding-right: 450px;
+    .img-logo {
+        padding-right: 0; /* Remove padding para evitar rolagem horizontal */
+        margin: 0 auto; /* Centraliza a imagem, se necessário */
+        display: block;
     }
 
     .third-section > div p {
         letter-spacing: -1px;
     }
-    strong{
+
+    strong {
         letter-spacing: -1px;
     }
 
-    .title{
+    .title {
         text-align: center;
     }
 
-    .img-who-am-i{
+    .img-who-am-i {
         max-width: 90%;
         height: auto;
     }
 
-    h2{
+    h2 {
         text-align: center;
-        padding-bottom:  2rem;
+        padding-bottom: 2rem;
     }
-
 }

@@ -55,7 +55,7 @@ header{
 }
 
 .img-logo{
-    max-width: 60px;
+    max-width: 50px;
     height: 100%;
 }
 
@@ -262,8 +262,15 @@ footer > div{
 }
 
 @media screen and (max-width: 800px){
+
+
+
     nav, .box-btn-actions{
         display: none;
+    }
+    .img-profile{
+        max-width: 90%;
+        height: auto;
     }
 
     .first-section{
@@ -271,7 +278,7 @@ footer > div{
     }
 
     .first-section h1{
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
     }
 
@@ -301,8 +308,8 @@ footer > div{
     }
 
     .img-who-am-i{
-        max-width: 400px;
-        height: 95%;
+        max-width: 90%;
+        height: auto;
     }
 
     h2{

@@ -282,11 +282,13 @@ footer > div{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        gap: 1px;
     }
 
     .first-section h1 {
         font-size: 30px;
         text-align: center;
+        letter-spacing: 1px;
         margin: 0; /* Remove margens que podem causar problemas de largura */
     }
 
@@ -300,6 +302,11 @@ footer > div{
         margin-left: 0; /* Ajusta a margem para evitar rolagem horizontal */
         display: block; /* Faz com que os botões se alinhem verticalmente */
         text-align: center;
+        
+    }
+
+    .link-action{
+        margin-left: 78px;
     }
 
     .img-logo {
@@ -311,6 +318,7 @@ footer > div{
     .third-section > div p {
         letter-spacing: -1px;
     }
+    
 
     strong {
         letter-spacing: -1px;

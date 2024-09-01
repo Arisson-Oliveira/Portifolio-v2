@@ -210,7 +210,7 @@ strong{
 }
 
 .third-section > div img{
-    width: 500px;
+    width: 300px;
     border-radius: 10px;
 }
 
@@ -306,7 +306,7 @@ footer > div{
     }
 
     .link-action{
-        margin-left: 5%;
+        margin: auto;
     }
 
     .img-logo {
@@ -329,7 +329,7 @@ footer > div{
     }
 
     .img-who-am-i {
-        max-width: 90%;
+        max-width: 60%;
         height: auto;
     }
 

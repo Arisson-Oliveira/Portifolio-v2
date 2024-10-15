@@ -50,14 +50,79 @@ header{
     min-height: 50px;
 }
 
-.box-img-header{
+.box-img-header {
     height: 100%;
+    position: relative;
+    display: inline-block;
 }
 
-.img-logo{
+.img-logo {
     max-width: 50px;
     height: 100%;
 }
+
+.box-img-header {
+    height: 100%;
+    position: relative; /* Necessário para posicionar o texto em relação ao contêiner */
+    display: inline-block;
+}
+
+.img-logo {
+    max-width: 50px;
+    height: 100%;
+}
+
+.box-img-header {
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.img-logo {
+    max-width: 50px;
+    height: 100%;
+}
+
+.box-img-header {
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.img-logo {
+    max-width: 50px;
+    height: 100%;
+}
+
+.hover-text {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência */
+    color: #fff;
+    font-size: 12px; /* Deixa o texto pequeno */
+    text-align: center;
+    border-radius: 3px;
+    padding: 2px 5px; /* Pequeno padding para o texto */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    
+    /* Posicionamento da mensagem */
+    position: absolute;
+    top: 110%; /* Exibe a mensagem logo abaixo da logo */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    
+    /* Transição para suavizar o efeito */
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1; /* Garante que o texto fique sobre outros elementos */
+}
+
+.box-img-header:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
 
 nav{
     display: flex;

@@ -30,3 +30,15 @@ function showProjects(data){
     }
 }
 getProjects()
+
+document.addEventListener("scroll", function () {
+    const whatsappButton = document.getElementById("whatsappButton");
+    const scrollPosition = window.scrollY;
+
+    // Exibe o botão ao rolar para baixo 100px
+    if (scrollPosition > 100) {
+        whatsappButton.classList.add("visible");
+    } else {
+        whatsappButton.classList.remove("visible");
+    }
+});

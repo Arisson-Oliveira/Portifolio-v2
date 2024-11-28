@@ -326,6 +326,53 @@ footer > div{
     box-shadow: 1px 1px 1px var(--cyan1);
 }
 
+.btn-whatsapp {
+    position: fixed;
+    bottom: 40px; /* Alterado para subir o ícone */
+    right: 24px;
+    z-index: 99;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Levemente deslocado */
+    transition: opacity 0.4s, transform 0.4s; /* Animação suave */
+}
+
+.btn-whatsapp.visible {
+    opacity: 1; /* Tornar visível */
+    transform: translateY(0); /* Voltar à posição normal */
+}
+
+.btn-whatsapp svg {
+    width: 43px; /* Ajuste o tamanho */
+    height: 90px; /* Ajuste o tamanho */
+    padding-right: 10px;
+    fill: #25D366; /* Cor verde oficial do WhatsApp */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.btn-whatsapp:hover svg {
+    transform: scale(1.1); /* Leve aumento ao passar o mouse */
+}
+
+.btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #232224;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
 @media screen and (max-width: 800px) {
 
     body {
@@ -339,9 +386,13 @@ footer > div{
     }
 
     .img-profile {
-        max-width: 100%;
-        height: auto;
+        display: block; /* Remove comportamento inline */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+        height: auto; /* Mantém a proporção da imagem */
+        text-align: center; /* Caso a imagem esteja dentro de um container de texto */
     }
+    
 
     .first-section {
         display: flex;
@@ -402,4 +453,29 @@ footer > div{
         text-align: center;
         padding-bottom: 2rem;
     }
+
+    .btn-whatsapp svg {
+        width: 33px; /* Ajuste o tamanho */
+        height: 33px; /* Ajuste o tamanho */
+        fill: #25D366; /* Cor verde oficial do WhatsApp */
+        
+    }
+    
+    button {
+      font-family: "Sora", sans-serif;
+      cursor: pointer;
+    }
+    
+    svg {
+      width: 100%;
+    }
+    
+    img {
+      width: 100%;
+    }
+    
+    a {
+      cursor: pointer;
+      text-decoration: none;
+    }/*# sourceMappingURL=style.css.map */
 }
